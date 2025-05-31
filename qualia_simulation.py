@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.integrate import cumtrapz
+from scipy import integrate
 
 # Time parameters
 t = np.linspace(0, 10, 1000)
@@ -26,7 +26,7 @@ for i in range(1, len(t)):
     C_t[i] = C_t[i-1] + dC * dt
 
 # Qualia function Q(t): smoothed integral of C(t) over time
-Q_t = cumtrapz(C_t, t, initial=0)
+Q_t = integrate.cumulative_trapezoid(C_t, t, initial=0)
 
 # Qualia activation (1 if Q ≥ θ, else 0)
 qualia_active = Q_t >= theta
@@ -58,4 +58,6 @@ plt.ylabel('Q(t)')
 plt.legend()
 
 plt.tight_layout()
+# Save the figure before showing it
+plt.savefig('qualia_model_figure.png', dpi=300, bbox_inches='tight')
 plt.show()
