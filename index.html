@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hard Problem of Consciousness: Qualia Dynamics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Hard Problem of Consciousness</h1>
+            <h2>A Computational Approach to Qualia Dynamics</h2>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#paper">Paper</a></li>
+                <li><a href="#model">Mathematical Model</a></li>
+                <li><a href="#visualizations">Visualizations</a></li>
+                <li><a href="#simulations">Simulations</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="overview" class="container">
+            <h2>Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>This project explores the "Hard Problem of Consciousness" - the enigmatic question of how and why physical brain processes give rise to subjective experience. Through mathematical modeling and visualization, we simulate the emergence of qualia (subjective conscious experiences) from information processing dynamics.</p>
+                    <p>Our approach models consciousness as an emergent property arising from the dynamic interplay of information flow, metastability, and coordination dynamics in complex systems.</p>
+                </div>
+                <div class="overview-image">
+                    <img src="3d_attractor.png" alt="3D Attractor Visualization" class="responsive-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="paper" class="container">
+            <h2>Paper: Bridging the Hard Problem</h2>
+            <div class="paper-content">
+                <h3>Abstract</h3>
+                <p>A concise summary introducing the hard problem of consciousness, the role of information in neural excitation, and the hypothesis that metastable neurodynamics, informed by information theory, may provide insights into subjective experience. Briefly outline the key arguments, including a discussion of altered states like flow and their implications for understanding consciousness.</p>
+
+                <h3>Introduction</h3>
+                <p>The human brain is a biological system uniquely equipped to process, integrate, and respond to vast amounts of information, enabling complex cognitive functions and adaptive behavior. Yet, the neural mechanisms underlying consciousness—the foundation of subjective experience—remain one of the greatest enigmas in science. The hard problem of consciousness, first articulated by Chalmers (1995), highlights the profound explanatory gap between the physical processes of the brain and the subjective quality of experience, or qualia. While neuroscience has made significant strides in mapping the neural correlates of consciousness (NCC)—including specific brain regions and network dynamics linked to awareness (Koch et al., 2016)—the mechanisms by which these physical processes generate the ineffable "what it feels like" aspect of conscious experience remain elusive. This divide underscores the challenge of moving from descriptive correlates to causative models that can account for the emergence of subjectivity.</p>
+
+                <p>Theoretical frameworks such as Integrated Information Theory (IIT) (Tononi, 2008) and Global Workspace Theory (GWT) (Dehaene & Changeux, 2011) have advanced our understanding of consciousness by conceptualizing it as an emergent property of complex neural activity. IIT quantifies consciousness as the degree of integrated information within a system, providing a mathematical lens for analyzing its structure and complexity (Balduzzi & Tononi, 2008). In contrast, GWT emphasizes the role of a central "workspace" that globally broadcasts information to various cognitive modules, enabling processes such as attention, decision-making, and memory (Baars, 1988). Despite their contributions, these models fall short of addressing a critical question: why does such intricate information processing give rise to the subjective phenomena of consciousness? Tackling this question demands a paradigm shift, integrating insights from neuroscience, information theory, quantum physics, and philosophy to address the ontological roots of experience (Northoff & Lamme, 2020).</p>
+
+                <p>While classical theories of consciousness often emphasize localized brain activity or global coordination, recent advances in network neuroscience suggest that dynamic, metastable states play a pivotal role. Metastability refers to transient configurations of neural activity that balance stability and adaptability, enabling seamless transitions between functional states (Tognoli & Kelso, 2014). These dynamic patterns allow the brain to flexibly integrate and process information while maintaining coherence—a property likely central to the emergence of consciousness. This paper posits that consciousness arises as an emergent phenomenon from these metastable states of neural activity, where information processing achieves a delicate equilibrium between order and chaos.</p>
+            </div>
+        </section>
+
+        <section id="model" class="container">
+            <h2>Mathematical Model</h2>
+            <div class="model-content">
+                <p>Our computational approach models consciousness through a set of coupled differential equations that capture the dynamics of information processing, metastability, and coordination in complex systems.</p>
+
+                <div class="equation-block">
+                    <h3>Core Components</h3>
+                    <ul>
+                        <li><strong>Information Flow (I)</strong>: Represents the flow of sensory and neural information</li>
+                        <li><strong>Metastability (M)</strong>: Captures the balance between integration and segregation</li>
+                        <li><strong>Coordination Dynamics (C)</strong>: Models the orchestration of activity across distributed regions</li>
+                        <li><strong>Qualia Potential (Q)</strong>: The accumulated potential for conscious experience</li>
+                    </ul>
+                </div>
+
+                <div class="equation-block">
+                    <h3>Governing Equations</h3>
+                    <div class="equation" id="eq1">dI/dt = Information flow dynamics (simulated with oscillatory patterns + noise)</div>
+                    <div class="equation" id="eq2">M(t) = |dI/dt| × (1 - I/I_max)</div>
+                    <div class="equation" id="eq3">dC/dt = α × I(t) × M(t) - β × C(t)</div>
+                    <div class="equation" id="eq4">Q(t) = ∫C(t)dt</div>
+                    <p>When Q(t) exceeds threshold θ, qualia (conscious experience) emerges.</p>
+                </div>
+
+                <div class="parameters-block">
+                    <h3>Key Parameters</h3>
+                    <ul>
+                        <li><strong>α</strong>: Coupling strength between information and metastability</li>
+                        <li><strong>β</strong>: Decay rate of coordination dynamics</li>
+                        <li><strong>I_max</strong>: Maximum information capacity</li>
+                        <li><strong>θ</strong>: Qualia threshold</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="visualizations" class="container">
+            <h2>Visualizations</h2>
+            <div class="visualization-grid">
+                <div class="visualization-item">
+                    <h3>Phase Space Projection</h3>
+                    <img src="phase_space_projection.png" alt="Phase Space Projection" class="responsive-img">
+                    <p>2D projection showing the relationship between Information (I) and Coordination (C) dynamics.</p>
+                </div>
+                <div class="visualization-item">
+                    <h3>3D Attractor</h3>
+                    <img src="3d_attractor.png" alt="3D Attractor" class="responsive-img">
+                    <p>3D visualization of the attractor dynamics between Information (I), Metastability (M), and Coordination (C).</p>
+                </div>
+                <div class="visualization-item full-width">
+                    <h3>Animated Trajectory</h3>
+                    <img src="metastable_trajectory_animation.gif" alt="Animated Trajectory" class="responsive-img">
+                    <p>Animation showing the system's trajectory through phase space, revealing the complex, non-linear dynamics that may underlie conscious experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulations" class="container">
+            <h2>Simulations</h2>
+            <div class="simulation-content">
+                <p>Our simulations explore how different parameter values affect the dynamics of consciousness. By adjusting parameters such as coupling strength (α), decay rate (β), information capacity (I_max), and qualia threshold (θ), we can observe various regimes of behavior:</p>
+                
+                <div class="simulation-scenarios">
+                    <div class="scenario">
+                        <h3>High Coupling Strength (α)</h3>
+                        <p>Increases the influence of information on coordination dynamics, potentially leading to more rapid transitions between states and heightened sensitivity to information.</p>
+                    </div>
+                    <div class="scenario">
+                        <h3>Low Decay Rate (β)</h3>
+                        <p>Results in more persistent coordination dynamics, potentially corresponding to sustained conscious states with greater temporal stability.</p>
+                    </div>
+                    <div class="scenario">
+                        <h3>Low Qualia Threshold (θ)</h3>
+                        <p>Leads to more frequent activation of qualia, potentially modeling heightened states of awareness or altered consciousness.</p>
+                    </div>
+                </div>
+
+                <p>The code for these simulations is available in our <a href="https://github.com/mannino49/Hard-Problem" target="_blank">GitHub repository</a>.</p>
+            </div>
+        </section>
+
+        <section id="references" class="container">
+            <h2>References</h2>
+            <div class="references-content">
+                <ul class="references-list">
+                    <li>Baars, B. J. (1988). A cognitive theory of consciousness. Cambridge University Press.</li>
+                    <li>Balduzzi, D., & Tononi, G. (2008). Integrated information in discrete dynamical systems: Motivation and theoretical framework. PLoS Computational Biology, 4(6), e1000091.</li>
+                    <li>Chalmers, D. J. (1995). Facing up to the problem of consciousness. Journal of Consciousness Studies, 2(3), 200–219.</li>
+                    <li>Dehaene, S., & Changeux, J. P. (2011). Experimental and theoretical approaches to conscious processing. Neuron, 70(2), 200–227.</li>
+                    <li>Fries, P. (2005). A mechanism for cognitive dynamics: Neuronal communication through neuronal coherence. Trends in Cognitive Sciences, 9(10), 474–480.</li>
+                    <li>Hubel, D. H., & Wiesel, T. N. (1962). Receptive fields, binocular interaction, and functional architecture in the cat's visual cortex. Journal of Physiology, 160(1), 106–154.</li>
+                    <li>Koch, C., Massimini, M., Boly, M., & Tononi, G. (2016). Neural correlates of consciousness: Progress and problems. Nature Reviews Neuroscience, 17(5), 307–321.</li>
+                    <li>Northoff, G., & Lamme, V. A. (2020). Neural mechanisms for predicting the consciousness state from brain activity in humans. Nature Reviews Neuroscience, 21(10), 595–608.</li>
+                    <li>Tognoli, E., & Kelso, J. A. S. (2014). The metastable brain. Neuron, 81(1), 35–48.</li>
+                    <li>Tononi, G. (2008). Consciousness as integrated information: A provisional manifesto. The Biological Bulletin, 215(3), 216–242.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Hard Problem Project</p>
+            <p><a href="https://github.com/mannino49/Hard-Problem" target="_blank">GitHub Repository</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>
